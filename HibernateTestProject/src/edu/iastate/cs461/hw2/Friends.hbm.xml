@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="edu.iastate.cs461.hw2.Friends" table="friends" catalog="homework2">
+        <composite-id name="id" class="edu.iastate.cs461.hw2.FriendsId">
+            <key-property name="person" type="java.lang.String">
+                <column name="person" length="30" />
+            </key-property>
+            <key-property name="friend" type="java.lang.String">
+                <column name="friend" length="30" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

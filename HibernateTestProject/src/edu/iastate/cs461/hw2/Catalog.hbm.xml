@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="edu.iastate.cs461.hw2.Catalog" table="catalog" catalog="homework2">
+        <composite-id name="id" class="edu.iastate.cs461.hw2.CatalogId">
+            <key-property name="sid" type="java.lang.Integer">
+                <column name="sid" />
+            </key-property>
+            <key-property name="pid" type="java.lang.Integer">
+                <column name="pid" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="suppliers" class="edu.iastate.cs461.hw2.Suppliers" update="false" insert="false" fetch="select">
+            <column name="sid" not-null="true" />
+        </many-to-one>
+        <many-to-one name="parts" class="edu.iastate.cs461.hw2.Parts" update="false" insert="false" fetch="select">
+            <column name="pid" not-null="true" />
+        </many-to-one>
+        <property name="cost" type="java.lang.Double">
+            <column name="cost" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

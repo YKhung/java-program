@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;PA4/src/Pa4&apos;&#x0D;&#x0A;- Original project: &apos;Bloom_Filter&apos;&#x0D;&#x0A;- Destination element: &apos;PA4/src/Pa4&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     BloomFilter.DocumentFilterDet.java&#x0D;&#x0A;     BloomFilter.BloomFilterDet.java" description="Copy compilation units" destination="=PA4/src&lt;Pa4" element1="/src&lt;BloomFilter{DocumentFilterDet.java" element2="/src&lt;BloomFilter{BloomFilterDet.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1429597678990" units="2" version="1.0"/>
+</session>
